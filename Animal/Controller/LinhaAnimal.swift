@@ -10,6 +10,8 @@ import UIKit
 
 class LinhaAnimal: UITableViewCell {
 
+    @IBOutlet weak var familiaAnimal: UILabel!
+    @IBOutlet weak var nomeAnimal: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
