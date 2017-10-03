@@ -47,7 +47,6 @@ var animais = [Animal]()
 
         return cell!
     }
-    
 
     /*
     // Override to support conditional editing of the table view.
@@ -84,14 +83,23 @@ var animais = [Animal]()
     }
     */
 
-    /*
-    // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        if segue.identifier == "infoAnimalSegue" {
+            
+            // obtendo uma instância da nova viewController que será exibida
+            if let animal = segue.destination as? AnimalViewController {
+                print (animal)
+                let indexPath = tableView.indexPathForSelectedRow //optional, to get from any UIButton for example
+                let linha = tableView.cellForRow(at: (indexPath)!) as! LinhaAnimal
+                animal.nomeAnima = linha.nomeAnimal.text!
+                print(animal.nomeAnima)
+                animal.familiaAni = linha.familiaAnimal.text!
+            }
+            
+        }
+  
     }
-    */
+
 
 }
