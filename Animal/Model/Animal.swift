@@ -12,10 +12,12 @@ class Animal{
     var familia =  ""
     var foto = ""
     var nomeCientifico = ""
-    init (nome : String,familia : String ,foto : String,nomeCientifico : String){
+    var descricao = ""
+    init (nome : String,familia : String ,foto : String,nomeCientifico : String,descricao : String){
         self.nome = nome
         self.familia = familia
         self.foto = foto
         self.nomeCientifico = nomeCientifico
+        self.descricao = descricao
     }
 }

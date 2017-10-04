@@ -9,11 +9,11 @@
 import Foundation
 class AnimalDAO {
     static func getAll()-> [Animal]{
-        return [Animal(nome: "Cachorro",familia : "Canidae",foto : "cachorro",nomeCientifico : "Canis lupus familiaris"),
-                Animal(nome: "Cisne",familia : "Anatidae",foto : "cisne",nomeCientifico : "Cygnus"),
-                Animal(nome: "Dromedario",familia : "Camelidade",foto : "dromedario",nomeCientifico : "Cygnus"),
-                Animal(nome: "Periquito",familia : "Psittacidae",foto : "periquito",nomeCientifico : "Melopsittacus undulatus"),
-                Animal(nome: "Wallaby",familia : "Macropodidae",foto : "wallaby",nomeCientifico : "Macropus rufogriseus")
+        return [Animal(nome: "Cachorro",familia : "Canidae",foto : "cachorro",nomeCientifico : "Canis lupus familiaris", descricao : "Animal doméstico"),
+                Animal(nome: "Cisne",familia : "Anatidae",foto : "cisne",nomeCientifico : "Cygnus", descricao : "Ave"),
+                Animal(nome: "Dromedario",familia : "Camelidade",foto : "dromedario",nomeCientifico : "Cygnus", descricao : "Camelo"),
+                Animal(nome: "Periquito",familia : "Psittacidae",foto : "periquito",nomeCientifico : "Melopsittacus undulatus",descricao : "Camelo"),
+                Animal(nome: "Wallaby",familia : "Macropodidae",foto : "wallaby",nomeCientifico : "Macropus rufogriseus", descricao : "Um animal")
         ]
     }
     static func getAnimalByName(nome : String)->(nomeCientifico : String,foto : String)

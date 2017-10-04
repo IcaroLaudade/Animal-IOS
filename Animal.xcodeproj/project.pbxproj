@@ -16,6 +16,8 @@
 		9B4C76961F81D86A00A5BF09 /* LinhaAnimal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B4C76951F81D86A00A5BF09 /* LinhaAnimal.swift */; };
 		9B4C76981F81DCE800A5BF09 /* TableAnimal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B4C76971F81DCE800A5BF09 /* TableAnimal.swift */; };
 		9B8D429B1F8318DE00AE2F12 /* AnimalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B8D429A1F8318DE00AE2F12 /* AnimalViewController.swift */; };
+		9BDFFAAB1F85328A007E1F08 /* DestaqueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BDFFAAA1F85328A007E1F08 /* DestaqueViewController.swift */; };
+		9BDFFAAD1F8532B2007E1F08 /* InformacoesAdicionaisViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BDFFAAC1F8532B2007E1F08 /* InformacoesAdicionaisViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		9B4C76951F81D86A00A5BF09 /* LinhaAnimal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinhaAnimal.swift; sourceTree = "<group>"; };
 		9B4C76971F81DCE800A5BF09 /* TableAnimal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableAnimal.swift; sourceTree = "<group>"; };
 		9B8D429A1F8318DE00AE2F12 /* AnimalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalViewController.swift; sourceTree = "<group>"; };
+		9BDFFAAA1F85328A007E1F08 /* DestaqueViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DestaqueViewController.swift; sourceTree = "<group>"; };
+		9BDFFAAC1F8532B2007E1F08 /* InformacoesAdicionaisViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformacoesAdicionaisViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +98,8 @@
 				9B4C76951F81D86A00A5BF09 /* LinhaAnimal.swift */,
 				9B4C76971F81DCE800A5BF09 /* TableAnimal.swift */,
 				9B8D429A1F8318DE00AE2F12 /* AnimalViewController.swift */,
+				9BDFFAAA1F85328A007E1F08 /* DestaqueViewController.swift */,
+				9BDFFAAC1F8532B2007E1F08 /* InformacoesAdicionaisViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -180,10 +186,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9BDFFAAB1F85328A007E1F08 /* DestaqueViewController.swift in Sources */,
 				9B4C76941F81CD5600A5BF09 /* AnimalDAO.swift in Sources */,
 				9B4C76981F81DCE800A5BF09 /* TableAnimal.swift in Sources */,
 				9B4C767C1F81CA7600A5BF09 /* AppDelegate.swift in Sources */,
 				9B4C76961F81D86A00A5BF09 /* LinhaAnimal.swift in Sources */,
+				9BDFFAAD1F8532B2007E1F08 /* InformacoesAdicionaisViewController.swift in Sources */,
 				9B8D429B1F8318DE00AE2F12 /* AnimalViewController.swift in Sources */,
 				9B4C76921F81CD4A00A5BF09 /* Animal.swift in Sources */,
 			);

@@ -20,11 +20,11 @@ class AnimalViewController: UIViewController {
         super.viewDidLoad()
         nomeAnimal.text = nomeAnima
         familiaAnimal.text = familiaAni
-        print (nomeAnimal.text)
         let informaFaltantesAnimal = AnimalDAO.getAnimalByName(nome: nomeAnima)
         print (informaFaltantesAnimal.nomeCientifico)
         nomeCientificoAnimal.text = informaFaltantesAnimal.nomeCientifico
         fotoAnimal.image = UIImage(named: informaFaltantesAnimal.foto)
+        self.title = nomeAnima
         // Do any additional setup after loading the view.
     }
 
