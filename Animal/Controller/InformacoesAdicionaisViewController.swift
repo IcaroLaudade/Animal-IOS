@@ -10,8 +10,17 @@ import UIKit
 
 class InformacoesAdicionaisViewController: UIViewController {
 
+    @IBOutlet weak var descAnimal: UILabel!
+    @IBOutlet weak var nomeAnimal: UILabel!
+    @IBOutlet weak var fotoAnimal: UIImageView!
+    var nome:String?
+    var decrr:String?
+    var fotou:String?
     override func viewDidLoad() {
         super.viewDidLoad()
+        descAnimal.text = decrr
+        nomeAnimal.text = nome
+        fotoAnimal.image = UIImage(named: fotou!)
 
         // Do any additional setup after loading the view.
     }

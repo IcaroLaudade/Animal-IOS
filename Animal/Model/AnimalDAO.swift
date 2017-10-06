@@ -12,7 +12,7 @@ class AnimalDAO {
         return [Animal(nome: "Cachorro",familia : "Canidae",foto : "cachorro",nomeCientifico : "Canis lupus familiaris", descricao : "Animal doméstico"),
                 Animal(nome: "Cisne",familia : "Anatidae",foto : "cisne",nomeCientifico : "Cygnus", descricao : "Ave"),
                 Animal(nome: "Dromedario",familia : "Camelidade",foto : "dromedario",nomeCientifico : "Cygnus", descricao : "Camelo"),
-                Animal(nome: "Periquito",familia : "Psittacidae",foto : "periquito",nomeCientifico : "Melopsittacus undulatus",descricao : "Camelo"),
+                Animal(nome: "Periquito",familia : "Psittacidae",foto : "periquito",nomeCientifico : "Melopsittacus undulatus",descricao : "Uma Ave"),
                 Animal(nome: "Wallaby",familia : "Macropodidae",foto : "wallaby",nomeCientifico : "Macropus rufogriseus", descricao : "Um animal")
         ]
     }

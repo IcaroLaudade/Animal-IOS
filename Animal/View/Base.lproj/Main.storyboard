@@ -107,7 +107,7 @@
             </objects>
             <point key="canvasLocation" x="480.80000000000001" y="447.52623688155927"/>
         </scene>
-        <!--Item 1-->
+        <!--Destaque-->
         <scene sceneID="ca6-8I-Adv">
             <objects>
                 <viewController id="2GI-dc-DCh" customClass="DestaqueViewController" customModule="Animal" customModuleProvider="target" sceneMemberID="viewController">
@@ -127,16 +127,16 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dzh-6G-zaf">
-                                <rect key="frame" x="16" y="248" width="343" height="21"/>
+                                <rect key="frame" x="16" y="248" width="343" height="27"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wlh-qt-BJL">
-                                <rect key="frame" x="16" y="323" width="343" height="21"/>
+                                <rect key="frame" x="16" y="323" width="343" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -146,18 +146,23 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                 <state key="normal" title="Ver mais"/>
                                 <connections>
-                                    <segue destination="cRx-F7-PsV" kind="show" id="RoO-1Y-GeO"/>
+                                    <segue destination="cRx-F7-PsV" kind="show" identifier="destaqueSegue" id="RoO-1Y-GeO"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="P8D-2j-ewu"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 1" id="Bqu-WP-tAK"/>
+                    <navigationItem key="navigationItem" title="Destaque" id="eXg-7s-ODB"/>
+                    <connections>
+                        <outlet property="descAnimal" destination="wlh-qt-BJL" id="12F-HN-CV7"/>
+                        <outlet property="imagemAnimal" destination="nv4-Ja-8Fm" id="gp0-vN-VQh"/>
+                        <outlet property="nomeAnimal" destination="dzh-6G-zaf" id="LXS-eb-ZKt"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8cP-96-9Qz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-71.200000000000003" y="-412.44377811094455"/>
+            <point key="canvasLocation" x="424.80000000000001" y="-412.44377811094455"/>
         </scene>
         <!--Informacoes Adicionais View Controller-->
         <scene sceneID="3IM-pO-cZi">
@@ -167,13 +172,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4v1-iz-JoV">
-                                <rect key="frame" x="0.0" y="47" width="375" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FUd-FH-IhY">
                                 <rect key="frame" x="67" y="98" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -185,14 +183,26 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4v1-iz-JoV">
+                                <rect key="frame" x="0.0" y="436" width="375" height="65"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="yYT-ah-Qei"/>
                     </view>
+                    <connections>
+                        <outlet property="descAnimal" destination="8p8-3L-gVh" id="WNb-Z9-itw"/>
+                        <outlet property="fotoAnimal" destination="FUd-FH-IhY" id="GZP-y9-Kxb"/>
+                        <outlet property="nomeAnimal" destination="4v1-iz-JoV" id="ZmE-PL-P3G"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fTS-KV-vwE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="708" y="-412"/>
+            <point key="canvasLocation" x="1365.5999999999999" y="-412.44377811094455"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="dwe-1d-Vkg">
@@ -204,7 +214,7 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
-                        <segue destination="2GI-dc-DCh" kind="relationship" relationship="viewControllers" id="hOh-21-YiU"/>
+                        <segue destination="qKi-TV-b47" kind="relationship" relationship="viewControllers" id="hOh-21-YiU"/>
                         <segue destination="sN1-C8-G1i" kind="relationship" relationship="viewControllers" id="KhU-Fx-F1R"/>
                     </connections>
                 </tabBarController>
@@ -230,6 +240,25 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8Sx-Dn-QOW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-972.79999999999995" y="447.97601199400304"/>
+        </scene>
+        <!--Item 1-->
+        <scene sceneID="pFs-b5-CQa">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="qKi-TV-b47" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item 1" id="Bqu-WP-tAK"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Fmi-BX-1Mt">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="2GI-dc-DCh" kind="relationship" relationship="rootViewController" id="QPZ-qt-qzf"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DAi-BV-kFs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-265" y="-412"/>
         </scene>
     </scenes>
 </document>
